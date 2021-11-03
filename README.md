@@ -40,7 +40,7 @@
 
 - [About](#about)
 - [Publish The Module as NPM Package Locally](#publish-the-module-as-npm-package-locally)
-  - [Adding wg-shared-lib dependency](#adding-wg-shared-lib-dependency)
+- [Adding wg-shared-lib dependency](#adding-wg-shared-lib-dependency)
 - [Running the app](#running-the-app)
 - [CI and Github Workflows](#ci-and-github-workflows)
 - [Next Steps](#next-steps)
@@ -100,7 +100,7 @@ Once the package is published, you can add it to the dependencies list in packag
 
 More details can be found on <a href="https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry"> this page </a>
 
-###  Adding wg-shared-lib dependency
+##  Adding wg-shared-lib dependency
 
 To be able to add wg-shared-lib as npm dependency, you need to authenticate to git remote npm package repository by logging in to npm, use the npm login command, replacing USERNAME with your GitHub username, TOKEN with your personal access token, and PUBLIC-EMAIL-ADDRESS with your email address.
 
