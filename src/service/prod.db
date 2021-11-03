@@ -1,4 +1,0 @@
-datasource db {
-  provider = "mysql"
-  url = "mysql://wodo-test:wodo123@local.dev.com:30006/wodo-test-db"
-}

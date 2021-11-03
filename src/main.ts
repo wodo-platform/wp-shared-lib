@@ -8,8 +8,8 @@ async function bootstrap() {
   //app.setGlobalPrefix('api');
 
   const options = new DocumentBuilder()
-    .setTitle('Demo Service API')
-    .setDescription('Demo Service API empowers developers to speed up their development process by providing the nodejs service template with prisma and nest frameworks')
+    .setTitle('Wodo Platforn Shared Library')
+    .setDescription('')
     .setVersion('1.0')
     .setBasePath('api')
     .addBearerAuth()
