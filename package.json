@@ -1,6 +1,6 @@
 {
   "name": "@wodo-platform/wp-shared-lib",
-  "version": "1.0.0",
+  "version": "1.0.30",
   "description": "This module contains shared constants, definitions and entities that do not change often and are used by other wodo platform modules and services. Some examples would be region names",
   "author": "Wodo Platform",
   "repository": {

@@ -1,4 +1,4 @@
-export interface CrptoAsset {
+export interface CryptoAsset {
     id:number;
     name:string;
     symbol:string;
