@@ -6,6 +6,26 @@ import { WalletType } from "./blockchain.wallet.type";
  */
 export interface BlockchainWalletApi {
      
+    /**
+     * 
+     * @param userId 
+     * @param name 
+     * @param description 
+     * @param walletType 
+     * @returns BlockchainWallet
+     */
     generateWallet(userId: number,name: string, description: string, walletType:WalletType): Promise<BlockchainWallet>;
+
+    /**
+     * 
+     * @param userId 
+     * @param seed 
+     * @param name 
+     * @param description 
+     * @param walletType 
+     * @returns BlockchainWallet
+     */
     generateWalletWithSeed(userId: number,seed: string,name: string, description: string, walletType:WalletType): Promise<BlockchainWallet>
+
+    
 }

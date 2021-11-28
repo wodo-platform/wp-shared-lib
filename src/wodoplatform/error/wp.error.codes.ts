@@ -37,4 +37,40 @@ WP_ERROR_BC_TYPE: WPErrorCode = {
 WP_ERROR_BC_WALLET_TYPE: WPErrorCode = {
     code: WPERORCODE_PREFIX+"102",
     description: "wallet type is not supported. Expected values are [" + WALLET_TYPE_BIP32.name + "] or [" + WALLET_TYPE_BIP32.symbol + "]"
+},
+WP_ERROR_BC_WALLET_CREATE_PAYLOAD_VALIDATION: WPErrorCode = {
+    code: WPERORCODE_PREFIX+"103",
+    description: "wallaet create payload is not valid."
+},
+WP_ERROR_BC_WALLET_CREATE_W_SEED_PAYLOAD_VALIDATION: WPErrorCode = {
+    code: WPERORCODE_PREFIX+"104",
+    description: "wallaet create with seed payload is not valid."
+},
+WP_ERROR_BC_WALLET_UPDATE_PAYLOAD_VALIDATION: WPErrorCode = {
+    code: WPERORCODE_PREFIX+"105",
+    description: "wallaet update payload is not valid."
+},
+WP_ERROR_BC_WALLET_UPDATE_W_SEED_PAYLOAD_VALIDATION: WPErrorCode = {
+    code: WPERORCODE_PREFIX+"106",
+    description: "wallaet update with seed payload is not valid."
+},
+WP_ERROR_BC_WALLET_ACCOUNT_CREATE_PAYLOAD_VALIDATION: WPErrorCode = {
+    code: WPERORCODE_PREFIX+"107",
+    description: "wallaet account create payload is not valid."
+},
+WP_ERROR_BC_WALLET_ACCOUNT_CREATE_W_SECRETS_PAYLOAD_VALIDATION: WPErrorCode = {
+    code: WPERORCODE_PREFIX+"108",
+    description: "wallaet account create with secrets payload is not valid."
+},
+WP_ERROR_BC_WALLET_ACCOUNT_UPDATE_PAYLOAD_VALIDATION: WPErrorCode = {
+    code: WPERORCODE_PREFIX+"109",
+    description: "wallaet account update payload is not valid."
+},
+WP_ERROR_BC_WALLET_ACCOUNT_UPDATE_W_SECRETS_PAYLOAD_VALIDATION: WPErrorCode = {
+    code: WPERORCODE_PREFIX+"110",
+    description: "wallaet account update with secrets payload is not valid."
+},
+WP_ERROR_BC_PAYMENT_PAYLOAD_VALIDATION: WPErrorCode = {
+    code: WPERORCODE_PREFIX+"111",
+    description: "blockchain payment payload is not valid."
 };
