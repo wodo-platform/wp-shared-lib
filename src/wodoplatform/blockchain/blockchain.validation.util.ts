@@ -3,8 +3,8 @@ import { WP_ERROR_BC_TYPE } from "../error/wp.error.codes";
 import { WP_ERROR_BC_WALLET_TYPE } from "../error/wp.error.codes";
 
 
-import { WALLET_TYPE_BIP32, WalletType } from "./api/blockchain.wallet.type";
-import { BANANO, WODO_COIN, CryptoAsset } from "./crypto.assets";
+import { WALLET_TYPE_BIP32, WalletType } from "./api/wallet/blockchain.wallet.type";
+import { BANANO, WODO_COIN, CryptoAsset } from "./api/crypto.assets";
 
 export class BlockchainValidationUtil {
 

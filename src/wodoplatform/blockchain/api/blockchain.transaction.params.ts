@@ -1,4 +1,6 @@
-export interface BlockchainTransactionParams {
+import { BlockchainTransaction } from "./blockchain.transaction";
+
+export interface BlockchainTransactionParams extends BlockchainTransaction {
     senderId: string;
     receiverId: string;
     assetId: string;

@@ -1,5 +1,5 @@
-import { WALLET_TYPE_BIP32 } from "../blockchain/api/blockchain.wallet.type";
-import { BANANO, WODO_COIN } from "../blockchain/crypto.assets";
+import { WALLET_TYPE_BIP32 } from "../blockchain/api/wallet/blockchain.wallet.type";
+import { BANANO, WODO_COIN } from "../blockchain/api/crypto.assets";
 
 /**
  * Wodo Platform error code definition. Each error case is presented  with a unique erorr code and categorized into different segments.
@@ -73,4 +73,8 @@ WP_ERROR_BC_WALLET_ACCOUNT_UPDATE_W_SECRETS_PAYLOAD_VALIDATION: WPErrorCode = {
 WP_ERROR_BC_PAYMENT_PAYLOAD_VALIDATION: WPErrorCode = {
     code: WPERORCODE_PREFIX+"111",
     description: "blockchain payment payload is not valid."
+},
+WP_ERROR_BC_WALLET_ACCOUNT_NOT_FOUND_ON_CHAIN: WPErrorCode = {
+    code: WPERORCODE_PREFIX+"112",
+    description: "wallaet account not found on the blockchain."
 };

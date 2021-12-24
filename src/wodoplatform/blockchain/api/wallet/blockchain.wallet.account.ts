@@ -1,4 +1,5 @@
 import {BigNumber} from 'bignumber.js';
+import { WalletType } from './blockchain.wallet.type';
 
 /**
  *  Baseline blockchain wallet account interface
@@ -11,9 +12,10 @@ export interface BlockchainWalletAccount {
     address:        string;
     secret:         string;
     publicKey:      string;
+    index:          number;
+    walletType:     WalletType;
     balance:        BigNumber;
     pending:        BigNumber;
     enabled:        boolean;
-    deleted:        boolean;
 }
 

@@ -1,23 +1,18 @@
-import { BlockchainWalletAccount } from "./blockchain.wallet.account";
 import { WalletType } from "./blockchain.wallet.type";
-import {BigNumber} from 'bignumber.js';
+import { BlockchainWalletAccountCreate } from "./blockchain.wallet.account.create";
 
 
 /**
  * Baseline e blockchain wallet interface. 
  * TODO: not good to have a dependency to a 3rd part library BigNumber in an API definition..nothing to do at this point. Investigate later
  */
-export interface BlockchainWallet {
-    id:             string;
+export interface BlockchainWalletCreateWSeed {
     name:           string;
     description:    string;
     type:           WalletType;
-    balance:        BigNumber;
-    pending:        BigNumber;
+    seed:           string;
+    mnemonic:       string | null; // TODO: is this genereated?
     enabled:        boolean;
-    seed:           string | null;
-    mnemonic:       string | null;
-    deleted:        boolean;
     userId:         number;
-    accounts:       BlockchainWalletAccount[] | null;
+    accounts:       BlockchainWalletAccountCreate[] | null;
 }
